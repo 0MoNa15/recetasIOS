@@ -37,6 +37,7 @@
 		304984ED2B34863400188A9A /* HttpClientRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984EC2B34863400188A9A /* HttpClientRequest.swift */; };
 		304984EF2B34867C00188A9A /* UrlSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984EE2B34867C00188A9A /* UrlSession.swift */; };
 		304984F12B3486A100188A9A /* HttpClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984F02B3486A100188A9A /* HttpClientError.swift */; };
+		304984F42B3487EB00188A9A /* RecipeAlamofireRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984F32B3487EB00188A9A /* RecipeAlamofireRepository.swift */; };
 		94C528459C8B3059940C1B8B /* Pods_infraestructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9BAF640741819551320DDF /* Pods_infraestructure.framework */; };
 		9D1BEC23DA24338A7719A791 /* Pods_recetasIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766CA463C63B4157C4A102BD /* Pods_recetasIOSTests.framework */; };
 		A14FAE303FEAA140E93E2DE3 /* Pods_recetasIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97249128124E7437A625F22D /* Pods_recetasIOS.framework */; };
@@ -155,6 +156,7 @@
 		304984EC2B34863400188A9A /* HttpClientRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientRequest.swift; sourceTree = "<group>"; };
 		304984EE2B34867C00188A9A /* UrlSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlSession.swift; sourceTree = "<group>"; };
 		304984F02B3486A100188A9A /* HttpClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientError.swift; sourceTree = "<group>"; };
+		304984F32B3487EB00188A9A /* RecipeAlamofireRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAlamofireRepository.swift; sourceTree = "<group>"; };
 		6D6F3CD9E39D738EC369E7ED /* Pods-infraestructure-infraestructureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-infraestructure-infraestructureTests.release.xcconfig"; path = "Target Support Files/Pods-infraestructure-infraestructureTests/Pods-infraestructure-infraestructureTests.release.xcconfig"; sourceTree = "<group>"; };
 		74DF3B10D1BDAF4BADECAA56 /* Pods-recetasIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recetasIOS.release.xcconfig"; path = "Target Support Files/Pods-recetasIOS/Pods-recetasIOS.release.xcconfig"; sourceTree = "<group>"; };
 		766CA463C63B4157C4A102BD /* Pods_recetasIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_recetasIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -308,9 +310,8 @@
 		304984882B346CEB00188A9A /* infraestructure */ = {
 			isa = PBXGroup;
 			children = (
+				304984F22B3487DA00188A9A /* recipe */,
 				304984E82B347FC500188A9A /* httpclient */,
-				304984CC2B346DAA00188A9A /* anticorruption */,
-				304984C72B346D6800188A9A /* recipe */,
 				304984892B346CEB00188A9A /* infraestructure.h */,
 			);
 			path = infraestructure;
@@ -340,52 +341,6 @@
 				304984BA2B346CF600188A9A /* domainTests.swift */,
 			);
 			path = domainTests;
-			sourceTree = "<group>";
-		};
-		304984C72B346D6800188A9A /* recipe */ = {
-			isa = PBXGroup;
-			children = (
-				304984CB2B346D9600188A9A /* repository */,
-				304984CA2B346D8F00188A9A /* dto */,
-				304984C92B346D8400188A9A /* anticorruption */,
-				304984C82B346D7700188A9A /* api */,
-			);
-			path = recipe;
-			sourceTree = "<group>";
-		};
-		304984C82B346D7700188A9A /* api */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = api;
-			sourceTree = "<group>";
-		};
-		304984C92B346D8400188A9A /* anticorruption */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = anticorruption;
-			sourceTree = "<group>";
-		};
-		304984CA2B346D8F00188A9A /* dto */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = dto;
-			sourceTree = "<group>";
-		};
-		304984CB2B346D9600188A9A /* repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = repository;
-			sourceTree = "<group>";
-		};
-		304984CC2B346DAA00188A9A /* anticorruption */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = anticorruption;
 			sourceTree = "<group>";
 		};
 		304984CD2B346DE400188A9A /* recipe */ = {
@@ -444,6 +399,46 @@
 				304984F02B3486A100188A9A /* HttpClientError.swift */,
 			);
 			path = httpclient;
+			sourceTree = "<group>";
+		};
+		304984F22B3487DA00188A9A /* recipe */ = {
+			isa = PBXGroup;
+			children = (
+				304984F82B34882D00188A9A /* dto */,
+				304984F72B34882700188A9A /* api */,
+				304984F62B34881E00188A9A /* anticorruption */,
+				304984F52B34880400188A9A /* repository */,
+			);
+			path = recipe;
+			sourceTree = "<group>";
+		};
+		304984F52B34880400188A9A /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				304984F32B3487EB00188A9A /* RecipeAlamofireRepository.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		304984F62B34881E00188A9A /* anticorruption */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = anticorruption;
+			sourceTree = "<group>";
+		};
+		304984F72B34882700188A9A /* api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		304984F82B34882D00188A9A /* dto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = dto;
 			sourceTree = "<group>";
 		};
 		6673705C3834B02475915E01 /* Frameworks */ = {
@@ -999,6 +994,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304984F42B3487EB00188A9A /* RecipeAlamofireRepository.swift in Sources */,
 				304984EF2B34867C00188A9A /* UrlSession.swift in Sources */,
 				304984F12B3486A100188A9A /* HttpClientError.swift in Sources */,
 				304984ED2B34863400188A9A /* HttpClientRequest.swift in Sources */,
