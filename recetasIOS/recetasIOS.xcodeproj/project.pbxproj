@@ -14,7 +14,6 @@
 		3049846A2B346CCE00188A9A /* recetasIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984692B346CCE00188A9A /* recetasIOSTests.swift */; };
 		304984742B346CCE00188A9A /* recetasIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984732B346CCE00188A9A /* recetasIOSUITests.swift */; };
 		304984762B346CCE00188A9A /* recetasIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984752B346CCE00188A9A /* recetasIOSUITestsLaunchTests.swift */; };
-		3049848B2B346CEB00188A9A /* infraestructure.docc in Sources */ = {isa = PBXBuildFile; fileRef = 3049848A2B346CEB00188A9A /* infraestructure.docc */; };
 		304984912B346CEB00188A9A /* infraestructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304984872B346CEB00188A9A /* infraestructure.framework */; };
 		304984982B346CEB00188A9A /* infraestructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984972B346CEB00188A9A /* infraestructureTests.swift */; };
 		304984992B346CEB00188A9A /* infraestructure.h in Headers */ = {isa = PBXBuildFile; fileRef = 304984892B346CEB00188A9A /* infraestructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -115,7 +114,6 @@
 		304984752B346CCE00188A9A /* recetasIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recetasIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		304984872B346CEB00188A9A /* infraestructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = infraestructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		304984892B346CEB00188A9A /* infraestructure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = infraestructure.h; sourceTree = "<group>"; };
-		3049848A2B346CEB00188A9A /* infraestructure.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = infraestructure.docc; sourceTree = "<group>"; };
 		304984902B346CEB00188A9A /* infraestructureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = infraestructureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		304984972B346CEB00188A9A /* infraestructureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infraestructureTests.swift; sourceTree = "<group>"; };
 		304984AA2B346CF500188A9A /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -249,8 +247,9 @@
 		304984882B346CEB00188A9A /* infraestructure */ = {
 			isa = PBXGroup;
 			children = (
+				304984CC2B346DAA00188A9A /* anticorruption */,
+				304984C72B346D6800188A9A /* recipe */,
 				304984892B346CEB00188A9A /* infraestructure.h */,
-				3049848A2B346CEB00188A9A /* infraestructure.docc */,
 			);
 			path = infraestructure;
 			sourceTree = "<group>";
@@ -278,6 +277,52 @@
 				304984BA2B346CF600188A9A /* domainTests.swift */,
 			);
 			path = domainTests;
+			sourceTree = "<group>";
+		};
+		304984C72B346D6800188A9A /* recipe */ = {
+			isa = PBXGroup;
+			children = (
+				304984CB2B346D9600188A9A /* repository */,
+				304984CA2B346D8F00188A9A /* dto */,
+				304984C92B346D8400188A9A /* anticorruption */,
+				304984C82B346D7700188A9A /* api */,
+			);
+			path = recipe;
+			sourceTree = "<group>";
+		};
+		304984C82B346D7700188A9A /* api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		304984C92B346D8400188A9A /* anticorruption */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = anticorruption;
+			sourceTree = "<group>";
+		};
+		304984CA2B346D8F00188A9A /* dto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = dto;
+			sourceTree = "<group>";
+		};
+		304984CB2B346D9600188A9A /* repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		304984CC2B346DAA00188A9A /* anticorruption */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = anticorruption;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -578,7 +623,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3049848B2B346CEB00188A9A /* infraestructure.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
