@@ -39,8 +39,8 @@ internal class RecipeAlamofireRepository : RecipeRepository {
     }
 
     func getRecipeDetail(recipeId: String?) -> AnyPublisher<RecipeDetail, Error> {
-        let request = GetRecipeDetailRequest(object: nil)
-        
+        let request = GetRecipeDetailRequest(object: recipeId)
+
         return httpClient.requestGeneric(request: request,
                                          entity: RecipeDetailDto.self,
                                          queue: .global(),

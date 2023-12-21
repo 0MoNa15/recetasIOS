@@ -19,6 +19,6 @@ struct GetAllRecipesRequest: HttpClientRequest {
     var httpMethod: Alamofire.HTTPMethod = .get
     
     init(object: Any?) {
-            self.params = nil
-        }
+        self.params = nil
+    }
 }
