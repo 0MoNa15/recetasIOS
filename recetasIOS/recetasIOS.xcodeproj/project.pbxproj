@@ -24,6 +24,13 @@
 		304984BC2B346CF600188A9A /* domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 304984AC2B346CF600188A9A /* domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		304984BF2B346CF600188A9A /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304984AA2B346CF500188A9A /* domain.framework */; };
 		304984C02B346CF600188A9A /* domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 304984AA2B346CF500188A9A /* domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		304984D22B3471C900188A9A /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984D12B3471C900188A9A /* Recipe.swift */; };
+		304984D42B3471F300188A9A /* RecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984D32B3471F300188A9A /* RecipeDetail.swift */; };
+		304984D62B34720700188A9A /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984D52B34720700188A9A /* Ingredient.swift */; };
+		304984D82B34721400188A9A /* Macronutrient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984D72B34721400188A9A /* Macronutrient.swift */; };
+		304984DA2B34723300188A9A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984D92B34723300188A9A /* Location.swift */; };
+		304984DD2B34730C00188A9A /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984DC2B34730C00188A9A /* Country.swift */; };
+		304984DF2B34736600188A9A /* RecipeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984DE2B34736600188A9A /* RecipeRepository.swift */; };
 		94C528459C8B3059940C1B8B /* Pods_infraestructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9BAF640741819551320DDF /* Pods_infraestructure.framework */; };
 		9D1BEC23DA24338A7719A791 /* Pods_recetasIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766CA463C63B4157C4A102BD /* Pods_recetasIOSTests.framework */; };
 		A14FAE303FEAA140E93E2DE3 /* Pods_recetasIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97249128124E7437A625F22D /* Pods_recetasIOS.framework */; };
@@ -129,6 +136,13 @@
 		304984AC2B346CF600188A9A /* domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = domain.h; sourceTree = "<group>"; };
 		304984B32B346CF600188A9A /* domainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = domainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		304984BA2B346CF600188A9A /* domainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = domainTests.swift; sourceTree = "<group>"; };
+		304984D12B3471C900188A9A /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		304984D32B3471F300188A9A /* RecipeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetail.swift; sourceTree = "<group>"; };
+		304984D52B34720700188A9A /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		304984D72B34721400188A9A /* Macronutrient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macronutrient.swift; sourceTree = "<group>"; };
+		304984D92B34723300188A9A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		304984DC2B34730C00188A9A /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		304984DE2B34736600188A9A /* RecipeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRepository.swift; sourceTree = "<group>"; };
 		6D6F3CD9E39D738EC369E7ED /* Pods-infraestructure-infraestructureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-infraestructure-infraestructureTests.release.xcconfig"; path = "Target Support Files/Pods-infraestructure-infraestructureTests/Pods-infraestructure-infraestructureTests.release.xcconfig"; sourceTree = "<group>"; };
 		74DF3B10D1BDAF4BADECAA56 /* Pods-recetasIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recetasIOS.release.xcconfig"; path = "Target Support Files/Pods-recetasIOS/Pods-recetasIOS.release.xcconfig"; sourceTree = "<group>"; };
 		766CA463C63B4157C4A102BD /* Pods_recetasIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_recetasIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -300,6 +314,7 @@
 		304984AB2B346CF500188A9A /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				304984DB2B34730100188A9A /* country */,
 				304984CD2B346DE400188A9A /* recipe */,
 				304984AC2B346CF600188A9A /* domain.h */,
 			);
@@ -373,6 +388,11 @@
 		304984CE2B346DF100188A9A /* model */ = {
 			isa = PBXGroup;
 			children = (
+				304984D12B3471C900188A9A /* Recipe.swift */,
+				304984D32B3471F300188A9A /* RecipeDetail.swift */,
+				304984D52B34720700188A9A /* Ingredient.swift */,
+				304984D72B34721400188A9A /* Macronutrient.swift */,
+				304984D92B34723300188A9A /* Location.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -380,6 +400,7 @@
 		304984CF2B346E0300188A9A /* repository */ = {
 			isa = PBXGroup;
 			children = (
+				304984DE2B34736600188A9A /* RecipeRepository.swift */,
 			);
 			path = repository;
 			sourceTree = "<group>";
@@ -389,6 +410,14 @@
 			children = (
 			);
 			path = usecases;
+			sourceTree = "<group>";
+		};
+		304984DB2B34730100188A9A /* country */ = {
+			isa = PBXGroup;
+			children = (
+				304984DC2B34730C00188A9A /* Country.swift */,
+			);
+			path = country;
 			sourceTree = "<group>";
 		};
 		6673705C3834B02475915E01 /* Frameworks */ = {
@@ -423,7 +452,6 @@
 				8C855F53BE46AF6621A2705C /* Pods-recetasIOSTests.debug.xcconfig */,
 				E4899E4D0BA0D2B5F859CE22 /* Pods-recetasIOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -616,6 +644,7 @@
 					};
 					304984A92B346CF500188A9A = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 					304984B22B346CF600188A9A = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -904,6 +933,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304984D42B3471F300188A9A /* RecipeDetail.swift in Sources */,
+				304984D82B34721400188A9A /* Macronutrient.swift in Sources */,
+				304984DA2B34723300188A9A /* Location.swift in Sources */,
+				304984DF2B34736600188A9A /* RecipeRepository.swift in Sources */,
+				304984D22B3471C900188A9A /* Recipe.swift in Sources */,
+				304984DD2B34730C00188A9A /* Country.swift in Sources */,
+				304984D62B34720700188A9A /* Ingredient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1079,6 +1115,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 29EA95D9B8D63F82923EA013 /* Pods-recetasIOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1108,6 +1145,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 74DF3B10D1BDAF4BADECAA56 /* Pods-recetasIOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1315,6 +1353,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AEB6A01023508EA5C5EFFD59 /* Pods-domain.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1337,6 +1376,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1348,6 +1388,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F29D993D407C50A2ACBACCF8 /* Pods-domain.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
