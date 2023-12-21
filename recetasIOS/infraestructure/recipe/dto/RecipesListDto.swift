@@ -13,15 +13,14 @@ struct RecipesDto: Codable {
     let recipes: [RecipeDto]
     
     enum CodingKeys: String, CodingKey {
-        case recipes = "recipes"
+        case recipes = "recetas"
     }
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
-        guard let results = try container.decodeIfPresent([RecipeDto].self, forKey: .recipes) else {
-            throw DecodingError.keyNotFound(CodingKeys.recipes, DecodingError.Context(codingPath: [CodingKeys.recipes], debugDescription: "Results field is missing or nil"))
-        }
+        let results = try container.decode([RecipeDto].self, forKey: .recipes)
+
         self.recipes = results
     }
 }

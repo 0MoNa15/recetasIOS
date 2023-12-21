@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "53564B0D-A70B-4A54-94F3-B3977DD94A8E"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60D140E0-E5A1-496B-AF64-9043B1F08E34"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "recetasIOS/recetasIOSApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "899A312F-AFD9-4162-AAD8-44C770C765C8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "recetasIOS/recipe/list/viewmodel/RecipeListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getRecipes()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D274B3F-F9C8-47B4-A852-661762EEF2E8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "recetasIOS/recipe/list/viewmodel/RecipeListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getRecipes()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC5DEFD1-7235-48F3-803A-C3066437EB3D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "domain/recipe/usecases/GetlAllRecipesUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "invoke()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EC5DEFD1-7235-48F3-803A-C3066437EB3D - 94f7a5cb9ba204d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recetasIOS.GetAllRecipesUseCaseImpl.invoke() -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;recetasIOS.Recipe&gt;, Swift.Error&gt;"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/domain/recipe/usecases/GetlAllRecipesUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "EC5DEFD1-7235-48F3-803A-C3066437EB3D - 8c61d56b74b35c39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "domain.GetAllRecipesUseCaseImpl.invoke() -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;domain.Recipe&gt;, Swift.Error&gt;"
+                  moduleName = "domain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/domain/recipe/usecases/GetlAllRecipesUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "EC5DEFD1-7235-48F3-803A-C3066437EB3D - c07e90c7e1870e9c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "infraestructure.GetAllRecipesUseCaseImpl.invoke() -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;infraestructure.Recipe&gt;, Swift.Error&gt;"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/domain/recipe/usecases/GetlAllRecipesUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0768BE56-BB28-44A9-B738-A4D03EEB96C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "infraestructure/recipe/repository/RecipeAlamofireRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "getAllRecipes()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0768BE56-BB28-44A9-B738-A4D03EEB96C7 - 911eb3e00ffd1aa6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recetasIOS.RecipeAlamofireRepository.getAllRecipes() -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;recetasIOS.Recipe&gt;, Swift.Error&gt;"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/repository/RecipeAlamofireRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "0768BE56-BB28-44A9-B738-A4D03EEB96C7 - f88e29c2b615ae91"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "infraestructure.RecipeAlamofireRepository.getAllRecipes() -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;infraestructure.Recipe&gt;, Swift.Error&gt;"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/repository/RecipeAlamofireRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E46EE439-48D3-416A-95D2-852F022FF3BF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "infraestructure/recipe/repository/RecipeAlamofireRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getAllRecipes()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E46EE439-48D3-416A-95D2-852F022FF3BF - 73eee2758b09a683"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (recetasIOS.RecipeDto) throws -&gt; Swift.Optional&lt;recetasIOS.Recipe&gt; in closure #1 (recetasIOS.RecipesDto) throws -&gt; Swift.Array&lt;recetasIOS.Recipe&gt; in recetasIOS.RecipeAlamofireRepository.getAllRecipes() -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;recetasIOS.Recipe&gt;, Swift.Error&gt;"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/repository/RecipeAlamofireRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "E46EE439-48D3-416A-95D2-852F022FF3BF - 73eee2758b09a683"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (recetasIOS.RecipeDto) throws -&gt; Swift.Optional&lt;recetasIOS.Recipe&gt; in closure #1 (recetasIOS.RecipesDto) throws -&gt; Swift.Array&lt;recetasIOS.Recipe&gt; in recetasIOS.RecipeAlamofireRepository.getAllRecipes() -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;recetasIOS.Recipe&gt;, Swift.Error&gt;"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/repository/RecipeAlamofireRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "E46EE439-48D3-416A-95D2-852F022FF3BF - 8face5250a904b05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (infraestructure.RecipeDto) throws -&gt; Swift.Optional&lt;infraestructure.Recipe&gt; in closure #1 (infraestructure.RecipesDto) throws -&gt; Swift.Array&lt;infraestructure.Recipe&gt; in infraestructure.RecipeAlamofireRepository.getAllRecipes() -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;infraestructure.Recipe&gt;, Swift.Error&gt;"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/repository/RecipeAlamofireRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "E46EE439-48D3-416A-95D2-852F022FF3BF - 8face5250a904b05"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (infraestructure.RecipeDto) throws -&gt; Swift.Optional&lt;infraestructure.Recipe&gt; in closure #1 (infraestructure.RecipesDto) throws -&gt; Swift.Array&lt;infraestructure.Recipe&gt; in infraestructure.RecipeAlamofireRepository.getAllRecipes() -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;infraestructure.Recipe&gt;, Swift.Error&gt;"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/repository/RecipeAlamofireRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3BDBAC0B-E66D-438C-8E48-E444983B2B08"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "infraestructure/recipe/repository/RecipeAlamofireRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getAllRecipes()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3BDBAC0B-E66D-438C-8E48-E444983B2B08 - 73eee2758b09a6c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (recetasIOS.RecipeDto) throws -&gt; Swift.Optional&lt;recetasIOS.Recipe&gt; in closure #1 (recetasIOS.RecipesDto) throws -&gt; Swift.Array&lt;recetasIOS.Recipe&gt; in recetasIOS.RecipeAlamofireRepository.getAllRecipes() -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;recetasIOS.Recipe&gt;, Swift.Error&gt;"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/repository/RecipeAlamofireRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "3BDBAC0B-E66D-438C-8E48-E444983B2B08 - 8face5250a904b47"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (infraestructure.RecipeDto) throws -&gt; Swift.Optional&lt;infraestructure.Recipe&gt; in closure #1 (infraestructure.RecipesDto) throws -&gt; Swift.Array&lt;infraestructure.Recipe&gt; in infraestructure.RecipeAlamofireRepository.getAllRecipes() -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;infraestructure.Recipe&gt;, Swift.Error&gt;"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/repository/RecipeAlamofireRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "104B820B-26B8-4203-9462-BBF348FE5E8A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "recetasIOS/recipe/list/viewmodel/RecipeListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getRecipes()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "104B820B-26B8-4203-9462-BBF348FE5E8A - 2364b9960834a967"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; () in recetasIOS.RecipeListViewModel.getRecipes() -&gt; ()"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/recetasIOS/recipe/list/viewmodel/RecipeListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "104B820B-26B8-4203-9462-BBF348FE5E8A - a790d86e67bbe92e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;recetasIOS.Recipe&gt;) -&gt; () in recetasIOS.RecipeListViewModel.getRecipes() -&gt; ()"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/recetasIOS/recipe/list/viewmodel/RecipeListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "104B820B-26B8-4203-9462-BBF348FE5E8A - 2364b9960834a939"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; () in recetasIOS.RecipeListViewModel.getRecipes() -&gt; ()"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/recetasIOS/recipe/list/viewmodel/RecipeListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E95D691-E0BF-40AB-92BF-FC39DA575287"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "recetasIOS/recipe/list/viewmodel/RecipeListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getRecipes()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9E95D691-E0BF-40AB-92BF-FC39DA575287 - a790d86e67bbe92e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;recetasIOS.Recipe&gt;) -&gt; () in recetasIOS.RecipeListViewModel.getRecipes() -&gt; ()"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/recetasIOS/recipe/list/viewmodel/RecipeListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "9E95D691-E0BF-40AB-92BF-FC39DA575287 - 2364b9960834a946"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.Subscribers.Completion&lt;Swift.Error&gt;) -&gt; () in recetasIOS.RecipeListViewModel.getRecipes() -&gt; ()"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/recetasIOS/recipe/list/viewmodel/RecipeListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2BC118B5-703B-467A-BC8F-6E0E0D762C78"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "recetasIOS/recipe/list/viewmodel/RecipeListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "getRecipes()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2BC118B5-703B-467A-BC8F-6E0E0D762C78 - 82c28a12fc91991e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recetasIOS.RecipeListViewModel.getRecipes() -&gt; ()"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/recetasIOS/recipe/list/viewmodel/RecipeListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "532">
+               </Location>
+               <Location
+                  uuid = "2BC118B5-703B-467A-BC8F-6E0E0D762C78 - a790d86e67bbe92e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;recetasIOS.Recipe&gt;) -&gt; () in recetasIOS.RecipeListViewModel.getRecipes() -&gt; ()"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/recetasIOS/recipe/list/viewmodel/RecipeListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39CA7E75-B793-478F-9C7C-2E1B19A4C047"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "infraestructure/recipe/repository/RecipeAlamofireRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getAllRecipes()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "39CA7E75-B793-478F-9C7C-2E1B19A4C047 - 28124e4dd24a0b8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (recetasIOS.RecipesDto) throws -&gt; Swift.Array&lt;recetasIOS.Recipe&gt; in recetasIOS.RecipeAlamofireRepository.getAllRecipes() -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;recetasIOS.Recipe&gt;, Swift.Error&gt;"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/repository/RecipeAlamofireRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "39CA7E75-B793-478F-9C7C-2E1B19A4C047 - 73eee2758b09a6c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (recetasIOS.RecipeDto) throws -&gt; Swift.Optional&lt;recetasIOS.Recipe&gt; in closure #1 (recetasIOS.RecipesDto) throws -&gt; Swift.Array&lt;recetasIOS.Recipe&gt; in recetasIOS.RecipeAlamofireRepository.getAllRecipes() -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;recetasIOS.Recipe&gt;, Swift.Error&gt;"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/repository/RecipeAlamofireRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "39CA7E75-B793-478F-9C7C-2E1B19A4C047 - 6a89524ce60d8bfd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (infraestructure.RecipesDto) throws -&gt; Swift.Array&lt;infraestructure.Recipe&gt; in infraestructure.RecipeAlamofireRepository.getAllRecipes() -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;infraestructure.Recipe&gt;, Swift.Error&gt;"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/repository/RecipeAlamofireRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "39CA7E75-B793-478F-9C7C-2E1B19A4C047 - 8face5250a904b47"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (infraestructure.RecipeDto) throws -&gt; Swift.Optional&lt;infraestructure.Recipe&gt; in closure #1 (infraestructure.RecipesDto) throws -&gt; Swift.Array&lt;infraestructure.Recipe&gt; in infraestructure.RecipeAlamofireRepository.getAllRecipes() -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;infraestructure.Recipe&gt;, Swift.Error&gt;"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/repository/RecipeAlamofireRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4E74280B-3AC4-4F9B-86CE-FAE7D9440E60"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "infraestructure/httpclient/HttpClientError.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "init(errorCode:decription:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4E74280B-3AC4-4F9B-86CE-FAE7D9440E60 - 754796dc70c316c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recetasIOS.HttpClientError.init(errorCode: Swift.Int, decription: Swift.String) -&gt; recetasIOS.HttpClientError"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/httpclient/HttpClientError.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "4E74280B-3AC4-4F9B-86CE-FAE7D9440E60 - f0c90947c2a03d25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "infraestructure.HttpClientError.init(errorCode: Swift.Int, decription: Swift.String) -&gt; infraestructure.HttpClientError"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/httpclient/HttpClientError.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "098711D1-AD18-4DFE-ABAE-AD65D9D62405"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "infraestructure/httpclient/HttpClientError.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "init(errorCode:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "098711D1-AD18-4DFE-ABAE-AD65D9D62405 - c3f4e55bb5ded4e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recetasIOS.HttpClientError.init(errorCode: Swift.Int) -&gt; recetasIOS.HttpClientError"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/httpclient/HttpClientError.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "098711D1-AD18-4DFE-ABAE-AD65D9D62405 - a8713968c708463d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "infraestructure.HttpClientError.init(errorCode: Swift.Int) -&gt; infraestructure.HttpClientError"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/httpclient/HttpClientError.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7B273786-85AC-4DE0-AF40-E9C634A8ABFB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "infraestructure/httpclient/HttpClientError.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "init(status:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7B273786-85AC-4DE0-AF40-E9C634A8ABFB - 572c4f860f504789"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recetasIOS.HttpClientError.init(status: recetasIOS.HttpClientError.StatusCodes) -&gt; recetasIOS.HttpClientError"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/httpclient/HttpClientError.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "7B273786-85AC-4DE0-AF40-E9C634A8ABFB - deb7eff5175ace10"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "infraestructure.HttpClientError.init(status: infraestructure.HttpClientError.StatusCodes) -&gt; infraestructure.HttpClientError"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/httpclient/HttpClientError.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "40F0142C-CC90-4F56-B96B-4BED22E6969D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "infraestructure/httpclient/HttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "evaluateError(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "40F0142C-CC90-4F56-B96B-4BED22E6969D - 74ea1780bfb6654"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recetasIOS.HttpClient.evaluateError(Alamofire.AFError) -&gt; recetasIOS.HttpClientError"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/httpclient/HttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "40F0142C-CC90-4F56-B96B-4BED22E6969D - 762fa01187b4bda3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "infraestructure.HttpClient.evaluateError(Alamofire.AFError) -&gt; infraestructure.HttpClientError"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/httpclient/HttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9DB045C3-AB67-4564-B395-4D10ACC5F3F3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "infraestructure/httpclient/HttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "evaluateError(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9DB045C3-AB67-4564-B395-4D10ACC5F3F3 - 74ea1780bfb6635"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recetasIOS.HttpClient.evaluateError(Alamofire.AFError) -&gt; recetasIOS.HttpClientError"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/httpclient/HttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "9DB045C3-AB67-4564-B395-4D10ACC5F3F3 - 762fa01187b4bdc2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "infraestructure.HttpClient.evaluateError(Alamofire.AFError) -&gt; infraestructure.HttpClientError"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/httpclient/HttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AEFB4917-7DCA-41CC-8252-F77427FA4B38"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "infraestructure/httpclient/HttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "evaluateError(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AEFB4917-7DCA-41CC-8252-F77427FA4B38 - 74ea1780bfb65cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recetasIOS.HttpClient.evaluateError(Alamofire.AFError) -&gt; recetasIOS.HttpClientError"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/httpclient/HttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "AEFB4917-7DCA-41CC-8252-F77427FA4B38 - 762fa01187b4be3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "infraestructure.HttpClient.evaluateError(Alamofire.AFError) -&gt; infraestructure.HttpClientError"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/httpclient/HttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "196">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F5AE89C-DA46-4D4B-89BA-DE9D61322CDC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "infraestructure/httpclient/HttpClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "requestGeneric(request:entity:queue:retries:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4F5AE89C-DA46-4D4B-89BA-DE9D61322CDC - 7606afd24cf8b2b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recetasIOS.HttpClient.requestGeneric&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: recetasIOS.HttpClientRequest, &#x3c4;_0_1: Swift.Decodable&gt;(request: &#x3c4;_0_0, entity: &#x3c4;_0_1.Type, queue: __C.OS_dispatch_queue, retries: Swift.Int) -&gt; Combine.AnyPublisher&lt;&#x3c4;_0_1, recetasIOS.HttpClientError&gt;"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/httpclient/HttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "824">
+               </Location>
+               <Location
+                  uuid = "4F5AE89C-DA46-4D4B-89BA-DE9D61322CDC - 28f4c70dbe7e9cc3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "infraestructure.HttpClient.requestGeneric&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: infraestructure.HttpClientRequest, &#x3c4;_0_1: Swift.Decodable&gt;(request: &#x3c4;_0_0, entity: &#x3c4;_0_1.Type, queue: __C.OS_dispatch_queue, retries: Swift.Int) -&gt; Combine.AnyPublisher&lt;&#x3c4;_0_1, infraestructure.HttpClientError&gt;"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/httpclient/HttpClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "824">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AE8CD2D5-83BD-4BF7-BABD-CD203C8A3633"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "infraestructure/recipe/dto/RecipesListDto.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AE8CD2D5-83BD-4BF7-BABD-CD203C8A3633 - 647becc099a25cdc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recetasIOS.RecipesDto.init(from: Swift.Decoder) throws -&gt; recetasIOS.RecipesDto"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/dto/RecipesListDto.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "AE8CD2D5-83BD-4BF7-BABD-CD203C8A3633 - 431f8c737d4849ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "infraestructure.RecipesDto.init(from: Swift.Decoder) throws -&gt; infraestructure.RecipesDto"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/dto/RecipesListDto.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "AE8CD2D5-83BD-4BF7-BABD-CD203C8A3633 - 647becc099a25cdc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recetasIOS.RecipesDto.init(from: Swift.Decoder) throws -&gt; recetasIOS.RecipesDto"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/dto/RecipesListDto.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "AE8CD2D5-83BD-4BF7-BABD-CD203C8A3633 - 431f8c737d4849ab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "infraestructure.RecipesDto.init(from: Swift.Decoder) throws -&gt; infraestructure.RecipesDto"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/dto/RecipesListDto.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "132">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD316D8D-5860-4F6B-9E4F-F34508A5DC83"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "infraestructure/recipe/dto/RecipesListDto.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FD316D8D-5860-4F6B-9E4F-F34508A5DC83 - 647becc099a25d77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recetasIOS.RecipesDto.init(from: Swift.Decoder) throws -&gt; recetasIOS.RecipesDto"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/dto/RecipesListDto.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "824">
+               </Location>
+               <Location
+                  uuid = "FD316D8D-5860-4F6B-9E4F-F34508A5DC83 - 431f8c737d484800"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "infraestructure.RecipesDto.init(from: Swift.Decoder) throws -&gt; infraestructure.RecipesDto"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/dto/RecipesListDto.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "824">
+               </Location>
+               <Location
+                  uuid = "FD316D8D-5860-4F6B-9E4F-F34508A5DC83 - 647becc099a25d50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recetasIOS.RecipesDto.init(from: Swift.Decoder) throws -&gt; recetasIOS.RecipesDto"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/dto/RecipesListDto.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "308">
+               </Location>
+               <Location
+                  uuid = "FD316D8D-5860-4F6B-9E4F-F34508A5DC83 - 431f8c737d484827"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "infraestructure.RecipesDto.init(from: Swift.Decoder) throws -&gt; infraestructure.RecipesDto"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/dto/RecipesListDto.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "308">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0638801C-9315-4ADF-9D10-4067DFB5D7B0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "infraestructure/recipe/dto/RecipesListDto.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0638801C-9315-4ADF-9D10-4067DFB5D7B0 - 647becc099a25d12"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "recetasIOS.RecipesDto.init(from: Swift.Decoder) throws -&gt; recetasIOS.RecipesDto"
+                  moduleName = "recetasIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/dto/RecipesListDto.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "0638801C-9315-4ADF-9D10-4067DFB5D7B0 - 431f8c737d484865"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "infraestructure.RecipesDto.init(from: Swift.Decoder) throws -&gt; infraestructure.RecipesDto"
+                  moduleName = "infraestructure"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/infraestructure/recipe/dto/RecipesListDto.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "228">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
