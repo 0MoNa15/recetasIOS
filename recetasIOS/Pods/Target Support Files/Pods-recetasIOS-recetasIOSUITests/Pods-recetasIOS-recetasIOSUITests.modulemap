@@ -1,0 +1,6 @@
+framework module Pods_recetasIOS_recetasIOSUITests {
+  umbrella header "Pods-recetasIOS-recetasIOSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_infraestructure_infraestructureTests {
+  umbrella header "Pods-infraestructure-infraestructureTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
