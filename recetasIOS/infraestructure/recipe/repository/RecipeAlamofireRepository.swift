@@ -7,16 +7,17 @@
 
 import Foundation
 import Combine
-import domain
 
-internal class RecipeAlamofireRepository: RecipeRepository {
-    
+internal class RecipeAlamofireRepository : RecipeRepository {
     func getAllRecipes() -> AnyPublisher<[Recipe], Error> {
+        fatalError("Not implemented")
     }
 
     func getRecipesByCountry(nameCountry: String) -> AnyPublisher<[Recipe], Error> {
+        fatalError("Not implemented")
     }
 
     func getRecipeDetail(recipeId: String?) -> AnyPublisher<RecipeDetail, Error> {
+        fatalError("Not implemented")
     }
 }
