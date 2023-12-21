@@ -69,10 +69,8 @@
 		30B6F2CB2B34AED600A57BCC /* DependencyInjectionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6F2CA2B34AED600A57BCC /* DependencyInjectionContainer.swift */; };
 		30B6F2CE2B34AFCD00A57BCC /* HttpClientAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6F2CD2B34AFCD00A57BCC /* HttpClientAssembler.swift */; };
 		30B6F2D02B34B00500A57BCC /* RecipeAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6F2CF2B34B00500A57BCC /* RecipeAssembler.swift */; };
-		30B6F2D22B34B01500A57BCC /* RecipeListDependencyAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6F2D12B34B01500A57BCC /* RecipeListDependencyAssembler.swift */; };
 		30B6F2D42B34B03000A57BCC /* RecipeDetailDependencyAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6F2D32B34B03000A57BCC /* RecipeDetailDependencyAssembler.swift */; };
 		30B6F2D52B34B19800A57BCC /* GetlAllRecipesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984E12B34755C00188A9A /* GetlAllRecipesUseCase.swift */; };
-		30B6F2D62B34B28600A57BCC /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6F2B72B34A5A000A57BCC /* RecipeListViewModel.swift */; };
 		30B6F2D82B34B46100A57BCC /* HttpClientAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6F2CD2B34AFCD00A57BCC /* HttpClientAssembler.swift */; };
 		30B6F2D92B34B47200A57BCC /* RecipeAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6F2CF2B34B00500A57BCC /* RecipeAssembler.swift */; };
 		30B6F2DA2B34B53900A57BCC /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984E92B347FE100188A9A /* HttpClient.swift */; };
@@ -87,6 +85,7 @@
 		30B6F2E32B34B6B000A57BCC /* RecipeListStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6F2BF2B34A70500A57BCC /* RecipeListStateView.swift */; };
 		30B6F2E42B34B6C100A57BCC /* RecipeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6F2422B349E0200A57BCC /* RecipeDto.swift */; };
 		30B6F2E92B34BA0900A57BCC /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6F2E82B34BA0900A57BCC /* Image.swift */; };
+		30B6F2EA2B34BB4C00A57BCC /* RecipeListDependencyAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B6F2D12B34B01500A57BCC /* RecipeListDependencyAssembler.swift */; };
 		94C528459C8B3059940C1B8B /* Pods_infraestructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9BAF640741819551320DDF /* Pods_infraestructure.framework */; };
 		9D1BEC23DA24338A7719A791 /* Pods_recetasIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766CA463C63B4157C4A102BD /* Pods_recetasIOSTests.framework */; };
 		A14FAE303FEAA140E93E2DE3 /* Pods_recetasIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97249128124E7437A625F22D /* Pods_recetasIOS.framework */; };
@@ -1156,6 +1155,7 @@
 				30B6F2372B3493EC00A57BCC /* RecipeRepository.swift in Sources */,
 				30B6F2D82B34B46100A57BCC /* HttpClientAssembler.swift in Sources */,
 				30B6F2BC2B34A60C00A57BCC /* GetRecipeDetailUseCase.swift in Sources */,
+				30B6F2EA2B34BB4C00A57BCC /* RecipeListDependencyAssembler.swift in Sources */,
 				30B6F22F2B3493D000A57BCC /* RecipeDetail.swift in Sources */,
 				30B6F2312B3493D500A57BCC /* Ingredient.swift in Sources */,
 				304984592B346CCD00188A9A /* recetasIOSApp.swift in Sources */,
@@ -1216,7 +1216,6 @@
 				30B6F2392B34948D00A57BCC /* Country.swift in Sources */,
 				30B6F22B2B34931E00A57BCC /* RecipeRepository.swift in Sources */,
 				30B6F22D2B3493C500A57BCC /* Recipe.swift in Sources */,
-				30B6F2D22B34B01500A57BCC /* RecipeListDependencyAssembler.swift in Sources */,
 				30B6F2D02B34B00500A57BCC /* RecipeAssembler.swift in Sources */,
 				30B6F2432B349E0200A57BCC /* RecipeDto.swift in Sources */,
 				304984EF2B34867C00188A9A /* UrlSession.swift in Sources */,
@@ -1225,7 +1224,6 @@
 				30B6F2412B349D0B00A57BCC /* RecipeTranslator.swift in Sources */,
 				30B6F2342B3493D900A57BCC /* Macronutrient.swift in Sources */,
 				30B6F2E22B34B69500A57BCC /* RecipeListViewModelObservable.swift in Sources */,
-				30B6F2D62B34B28600A57BCC /* RecipeListViewModel.swift in Sources */,
 				304984ED2B34863400188A9A /* HttpClientRequest.swift in Sources */,
 				304984EA2B347FE100188A9A /* HttpClient.swift in Sources */,
 				30B6F2D52B34B19800A57BCC /* GetlAllRecipesUseCase.swift in Sources */,

@@ -11,7 +11,10 @@ import SwiftUI
 struct recetasIOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            NavigationStack {
+                RecipeLisView(viewModel: DependencyInjectionContainer.shared.resolve(RecipeListViewModel.self)!)
+            }
         }
     }
 }
