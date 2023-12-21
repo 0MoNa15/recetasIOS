@@ -11,6 +11,11 @@ import Swinject
 class RecipeDetailDependencyAssembler: Assembly {
     
     func assemble(container: Container) {
+        container.register(GetRecipeDetailUseCaseImpl.self) { container in
+            GetRecipeDetailUseCaseImpl(recipeRepository: container.resolve(RecipeRepository.self)!)
+        }
+        .inObjectScope(.container)
+        
         container.register(RecipeDetailViewModel.self) { (container, idRecipe: String) in
             RecipeDetailViewModel(getRecipeDetailUseCase: container.resolve(GetRecipeDetailUseCaseImpl.self)!, idRecipe: idRecipe)
         }
