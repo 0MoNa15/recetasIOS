@@ -19,7 +19,6 @@
 		304984992B346CEB00188A9A /* infraestructure.h in Headers */ = {isa = PBXBuildFile; fileRef = 304984892B346CEB00188A9A /* infraestructure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3049849C2B346CEB00188A9A /* infraestructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304984872B346CEB00188A9A /* infraestructure.framework */; };
 		3049849D2B346CEB00188A9A /* infraestructure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 304984872B346CEB00188A9A /* infraestructure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		304984AE2B346CF600188A9A /* domain.docc in Sources */ = {isa = PBXBuildFile; fileRef = 304984AD2B346CF600188A9A /* domain.docc */; };
 		304984B42B346CF600188A9A /* domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304984AA2B346CF500188A9A /* domain.framework */; };
 		304984BB2B346CF600188A9A /* domainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984BA2B346CF600188A9A /* domainTests.swift */; };
 		304984BC2B346CF600188A9A /* domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 304984AC2B346CF600188A9A /* domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -118,7 +117,6 @@
 		304984972B346CEB00188A9A /* infraestructureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infraestructureTests.swift; sourceTree = "<group>"; };
 		304984AA2B346CF500188A9A /* domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		304984AC2B346CF600188A9A /* domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = domain.h; sourceTree = "<group>"; };
-		304984AD2B346CF600188A9A /* domain.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = domain.docc; sourceTree = "<group>"; };
 		304984B32B346CF600188A9A /* domainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = domainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		304984BA2B346CF600188A9A /* domainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = domainTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -265,8 +263,8 @@
 		304984AB2B346CF500188A9A /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				304984CD2B346DE400188A9A /* recipe */,
 				304984AC2B346CF600188A9A /* domain.h */,
-				304984AD2B346CF600188A9A /* domain.docc */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -323,6 +321,37 @@
 			children = (
 			);
 			path = anticorruption;
+			sourceTree = "<group>";
+		};
+		304984CD2B346DE400188A9A /* recipe */ = {
+			isa = PBXGroup;
+			children = (
+				304984D02B346E0B00188A9A /* usecases */,
+				304984CF2B346E0300188A9A /* repository */,
+				304984CE2B346DF100188A9A /* model */,
+			);
+			path = recipe;
+			sourceTree = "<group>";
+		};
+		304984CE2B346DF100188A9A /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		304984CF2B346E0300188A9A /* repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		304984D02B346E0B00188A9A /* usecases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = usecases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -638,7 +667,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				304984AE2B346CF600188A9A /* domain.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
