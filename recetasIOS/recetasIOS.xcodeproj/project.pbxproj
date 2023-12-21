@@ -33,6 +33,10 @@
 		304984DF2B34736600188A9A /* RecipeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984DE2B34736600188A9A /* RecipeRepository.swift */; };
 		304984E22B34755C00188A9A /* GetlAllRecipesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984E12B34755C00188A9A /* GetlAllRecipesUseCase.swift */; };
 		304984E52B34757B00188A9A /* GetRecipeDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984E42B34757B00188A9A /* GetRecipeDetailUseCase.swift */; };
+		304984EA2B347FE100188A9A /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984E92B347FE100188A9A /* HttpClient.swift */; };
+		304984ED2B34863400188A9A /* HttpClientRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984EC2B34863400188A9A /* HttpClientRequest.swift */; };
+		304984EF2B34867C00188A9A /* UrlSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984EE2B34867C00188A9A /* UrlSession.swift */; };
+		304984F12B3486A100188A9A /* HttpClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304984F02B3486A100188A9A /* HttpClientError.swift */; };
 		94C528459C8B3059940C1B8B /* Pods_infraestructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9BAF640741819551320DDF /* Pods_infraestructure.framework */; };
 		9D1BEC23DA24338A7719A791 /* Pods_recetasIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766CA463C63B4157C4A102BD /* Pods_recetasIOSTests.framework */; };
 		A14FAE303FEAA140E93E2DE3 /* Pods_recetasIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97249128124E7437A625F22D /* Pods_recetasIOS.framework */; };
@@ -147,6 +151,10 @@
 		304984DE2B34736600188A9A /* RecipeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRepository.swift; sourceTree = "<group>"; };
 		304984E12B34755C00188A9A /* GetlAllRecipesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetlAllRecipesUseCase.swift; sourceTree = "<group>"; };
 		304984E42B34757B00188A9A /* GetRecipeDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRecipeDetailUseCase.swift; sourceTree = "<group>"; };
+		304984E92B347FE100188A9A /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		304984EC2B34863400188A9A /* HttpClientRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientRequest.swift; sourceTree = "<group>"; };
+		304984EE2B34867C00188A9A /* UrlSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlSession.swift; sourceTree = "<group>"; };
+		304984F02B3486A100188A9A /* HttpClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientError.swift; sourceTree = "<group>"; };
 		6D6F3CD9E39D738EC369E7ED /* Pods-infraestructure-infraestructureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-infraestructure-infraestructureTests.release.xcconfig"; path = "Target Support Files/Pods-infraestructure-infraestructureTests/Pods-infraestructure-infraestructureTests.release.xcconfig"; sourceTree = "<group>"; };
 		74DF3B10D1BDAF4BADECAA56 /* Pods-recetasIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-recetasIOS.release.xcconfig"; path = "Target Support Files/Pods-recetasIOS/Pods-recetasIOS.release.xcconfig"; sourceTree = "<group>"; };
 		766CA463C63B4157C4A102BD /* Pods_recetasIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_recetasIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -300,6 +308,7 @@
 		304984882B346CEB00188A9A /* infraestructure */ = {
 			isa = PBXGroup;
 			children = (
+				304984E82B347FC500188A9A /* httpclient */,
 				304984CC2B346DAA00188A9A /* anticorruption */,
 				304984C72B346D6800188A9A /* recipe */,
 				304984892B346CEB00188A9A /* infraestructure.h */,
@@ -424,6 +433,17 @@
 				304984DC2B34730C00188A9A /* Country.swift */,
 			);
 			path = country;
+			sourceTree = "<group>";
+		};
+		304984E82B347FC500188A9A /* httpclient */ = {
+			isa = PBXGroup;
+			children = (
+				304984E92B347FE100188A9A /* HttpClient.swift */,
+				304984EC2B34863400188A9A /* HttpClientRequest.swift */,
+				304984EE2B34867C00188A9A /* UrlSession.swift */,
+				304984F02B3486A100188A9A /* HttpClientError.swift */,
+			);
+			path = httpclient;
 			sourceTree = "<group>";
 		};
 		6673705C3834B02475915E01 /* Frameworks */ = {
@@ -646,6 +666,7 @@
 					};
 					304984862B346CEB00188A9A = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 					3049848F2B346CEB00188A9A = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -978,6 +999,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304984EF2B34867C00188A9A /* UrlSession.swift in Sources */,
+				304984F12B3486A100188A9A /* HttpClientError.swift in Sources */,
+				304984ED2B34863400188A9A /* HttpClientRequest.swift in Sources */,
+				304984EA2B347FE100188A9A /* HttpClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1313,6 +1338,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7EA91C1CCB1214A533E1B1FA /* Pods-infraestructure.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1335,6 +1361,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1346,6 +1373,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9E82F31EADBA96E034B466E /* Pods-infraestructure.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
