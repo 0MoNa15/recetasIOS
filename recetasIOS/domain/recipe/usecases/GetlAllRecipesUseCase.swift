@@ -5,6 +5,7 @@
 //  Created by Zorayda Yadira Gutierrez Montes - Ceiba Software on 21/12/23.
 //
 
+import Foundation
 import Combine
 
 protocol GetAllRecipesUseCase {

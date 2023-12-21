@@ -2,6 +2,7 @@
 # platform :ios, '9.0'
 
 alamofire = 'Alamofire'
+swinject = 'Swinject'
 
 target 'domain' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -19,6 +20,7 @@ target 'infraestructure' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod alamofire
+  pod swinject
 
   # Pods for infraestructure
 
@@ -32,6 +34,7 @@ target 'recetasIOS' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod alamofire
+  pod swinject
 
   # Pods for recetasIOS
 

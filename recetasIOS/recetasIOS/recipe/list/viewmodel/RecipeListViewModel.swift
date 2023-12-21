@@ -9,12 +9,12 @@ import Foundation
 import Combine
 
 final class RecipeListViewModel {
-    private let getAllRecipesUseCase: GetAllRecipesUseCase
+    private let getAllRecipesUseCase: GetAllRecipesUseCaseImpl
     private var cancellables = Set<AnyCancellable>()
     @Published var state = RecipeListStateView<Recipe>.LOADING
     var idRecipe: String = ""
     
-    init(getAllRecipesUseCase: GetAllRecipesUseCase) {
+    init(getAllRecipesUseCase: GetAllRecipesUseCaseImpl) {
         self.getAllRecipesUseCase = getAllRecipesUseCase
         self.getRecipes()
     }
