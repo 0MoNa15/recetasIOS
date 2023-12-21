@@ -12,7 +12,7 @@ struct GetRecipeDetailRequest: HttpClientRequest {
     
     typealias Model = Any?
     let baseURL: String = "https://demo3790638.mockable.io/"
-    let recipeId: String = "recipeId"
+    let recipeId: String = "COL001"
     
     var enpoint: String { baseURL + "/receta" }
     var httpHeaders: [String : String] = [:]

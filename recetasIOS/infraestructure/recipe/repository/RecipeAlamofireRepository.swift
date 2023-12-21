@@ -39,6 +39,19 @@ internal class RecipeAlamofireRepository : RecipeRepository {
     }
 
     func getRecipeDetail(recipeId: String?) -> AnyPublisher<RecipeDetail, Error> {
-        fatalError("Not implemented")
+        let request = GetRecipeDetailRequest(object: nil)
+        
+        return httpClient.requestGeneric(request: request,
+                                         entity: RecipeDetailDto.self,
+                                         queue: .global(),
+                                         retries: 1)
+            .tryMap { recipeDetailDto in
+                do {
+                    return try RecipeDetailTranslator.fromDtoToDomain(recipeDetailDto: recipeDetailDto)
+                } catch {
+                    throw error
+                }
+            }
+            .eraseToAnyPublisher()
     }
 }
