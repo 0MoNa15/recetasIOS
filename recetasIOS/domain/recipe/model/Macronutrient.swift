@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Macronutrient {
+public struct Macronutrient: Equatable {
     let calories: Int
     let proteins: Int
     let fats: Int

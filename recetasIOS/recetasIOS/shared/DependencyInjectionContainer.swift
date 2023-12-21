@@ -19,7 +19,7 @@ final class DependencyInjectionContainer {
                 RecipeListDependencyAssembler(),
                 HttpClientAssembler(),
                 RecipeAssembler(),
-                //RecipeDetailDependencyAssembler()
+                RecipeDetailDependencyAssembler()
             ]
         )
     }
@@ -28,7 +28,7 @@ final class DependencyInjectionContainer {
         return assembler.resolver.resolve(serviceType)
     }
     
-    func resolve<Service>(_ serviceType: Service.Type, argument arg1: Int) -> Service? {
+    func resolve<Service>(_ serviceType: Service.Type, argument arg1: String) -> Service? {
         return assembler.resolver.resolve(serviceType, argument: arg1)
     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Location {
+public struct Location: Equatable {
     let latitude: Double
     let longitude: Double
     let city: String

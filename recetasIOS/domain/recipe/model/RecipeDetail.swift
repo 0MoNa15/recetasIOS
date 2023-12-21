@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RecipeDetail {
+public struct RecipeDetail: Equatable {
     let id: String
     let name: String
     let description: String

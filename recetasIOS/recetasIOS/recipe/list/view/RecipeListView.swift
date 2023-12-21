@@ -42,10 +42,11 @@ struct RecipeLisView<ViewModel>: View where ViewModel: RecipeListViewModelObserv
                 Color("DarkBlue").ignoresSafeArea(.all,edges: .all)
                 showCardRecipeView(recipes: recipes)
                     .fullScreenCover(isPresented: $isPresented) {
-                        /*RecipeDetailView(viewModel: DependencyInjectionContainer.shared.resolve(
+                        RecipeDetailView(viewModel: DependencyInjectionContainer.shared.resolve(
                             RecipeDetailViewModel.self,
-                            argument: viewModel.idRecipe)!
-                        )*/
+                            argument: "COL001")!
+                            //argument: viewModel.idRecipe)!
+                        )
                     }
                     .padding(.top, 60)
             case .FAILURE(let error):

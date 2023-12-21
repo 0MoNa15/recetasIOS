@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Ingredient {
+public struct Ingredient: Equatable {
     let name: String
     let amount: Int
     let presentation: String
