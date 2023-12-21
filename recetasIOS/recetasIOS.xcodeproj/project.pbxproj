@@ -492,6 +492,7 @@
 				304984522B346CCD00188A9A /* Frameworks */,
 				304984532B346CCD00188A9A /* Resources */,
 				304984A12B346CEB00188A9A /* Embed Frameworks */,
+				0F211F974FD72E88CB58424F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -531,6 +532,7 @@
 				3049846B2B346CCE00188A9A /* Sources */,
 				3049846C2B346CCE00188A9A /* Frameworks */,
 				3049846D2B346CCE00188A9A /* Resources */,
+				D1566947D1472FA86730DE5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -569,6 +571,7 @@
 				3049848C2B346CEB00188A9A /* Sources */,
 				3049848D2B346CEB00188A9A /* Frameworks */,
 				3049848E2B346CEB00188A9A /* Resources */,
+				0C98A8552A8C29C90C09B62B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -737,6 +740,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0C98A8552A8C29C90C09B62B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-infraestructure-infraestructureTests/Pods-infraestructure-infraestructureTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-infraestructure-infraestructureTests/Pods-infraestructure-infraestructureTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-infraestructure-infraestructureTests/Pods-infraestructure-infraestructureTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F211F974FD72E88CB58424F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-recetasIOS/Pods-recetasIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-recetasIOS/Pods-recetasIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-recetasIOS/Pods-recetasIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		954BD485A6AA9053D99539EB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -801,6 +838,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1566947D1472FA86730DE5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-recetasIOS-recetasIOSUITests/Pods-recetasIOS-recetasIOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-recetasIOS-recetasIOSUITests/Pods-recetasIOS-recetasIOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-recetasIOS-recetasIOSUITests/Pods-recetasIOS-recetasIOSUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D7A2E680F6512269CEDF5112 /* [CP] Check Pods Manifest.lock */ = {
