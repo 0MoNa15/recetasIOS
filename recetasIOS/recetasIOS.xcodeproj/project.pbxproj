@@ -376,6 +376,7 @@
 		304984572B346CCD00188A9A /* recetasIOS */ = {
 			isa = PBXGroup;
 			children = (
+				30B6F3312B350B3B00A57BCC /* country */,
 				30B6F2C72B34AC8200A57BCC /* shared */,
 				30B6F2B22B34A53500A57BCC /* recipe */,
 				304984682B346CCE00188A9A /* recetasIOSTests */,
@@ -581,8 +582,6 @@
 			isa = PBXGroup;
 			children = (
 				30B6F2C12B34A8DB00A57BCC /* RecipeListView.swift */,
-				30B6F2C32B34AB2600A57BCC /* RecipeCardView.swift */,
-				30B6F2C52B34AB5000A57BCC /* CustomCarouselView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -713,6 +712,15 @@
 				30B6F3192B34E2A900A57BCC /* CountryTranslator.swift */,
 			);
 			path = anticorruption;
+			sourceTree = "<group>";
+		};
+		30B6F3312B350B3B00A57BCC /* country */ = {
+			isa = PBXGroup;
+			children = (
+				30B6F2C32B34AB2600A57BCC /* RecipeCardView.swift */,
+				30B6F2C52B34AB5000A57BCC /* CustomCarouselView.swift */,
+			);
+			path = country;
 			sourceTree = "<group>";
 		};
 		6673705C3834B02475915E01 /* Frameworks */ = {

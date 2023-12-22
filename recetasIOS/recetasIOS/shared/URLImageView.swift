@@ -21,7 +21,7 @@ struct URLImageView: View {
                 image
                     .imageModifier()
             case .failure(_):
-                Image(systemName: "person.crop.circle.badge.exclamationmark.fill")
+                Image(systemName: "fork.knife.fill")
                     .iconModifier()
             case .empty:
                 ProgressView()

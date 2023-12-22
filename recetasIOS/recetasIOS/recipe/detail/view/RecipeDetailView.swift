@@ -33,66 +33,10 @@ struct RecipeDetailView<ViewModel>: View where ViewModel: RecipeDetailViewModel 
                         Text(recipeDetail?.name ?? "")
                             .font(.largeTitle)
                             .fontWeight(.heavy)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(Color.blue)
                             .multilineTextAlignment(.center)
                             .padding()
-                        /*HStack(spacing: 5) {
-                            ForEach(1 ..< 6) { star in
-                                Image(systemName: star <= Int(recipeDetail?.name ?? 0) ? "star.fill" : "star")
-                                    .font(.system(size: 20))
-                                    .foregroundColor(.yellow)
-                            }
-                        }*/
                     }
-                    
-                    Text(recipeDetail?.name ?? "")
-                        .font(.callout)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
-                        .padding()
-                    
-                    HStack(spacing: 20) {
-                        VStack {
-                            Text("HOLLAAA")
-                                .font(.system(size: 12))
-                                .fontWeight(.medium)
-                                .foregroundColor(.white)
-                                .padding([.top, .trailing, .leading], 8)
-                            Text(recipeDetail?.name ?? "")
-                                .font(.system(size: 12))
-                                .fontWeight(.medium)
-                                .foregroundColor(.white)
-                                .padding(.top, 0.4)
-                                .padding(.bottom, 8)
-                        }
-                        .frame(width: 160, height: 70)
-                        .background(Color("LightGrey"))
-                        
-                        VStack {
-                            Text("HOLAAA")
-                                .font(.system(size: 12))
-                                .fontWeight(.medium)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(.white)
-                                .padding([.top, .trailing, .leading], 8)
-                            Text(recipeDetail?.name ?? "")
-                                .font(.system(size: 12))
-                                .fontWeight(.medium)
-                                .foregroundColor(.white)
-                                .padding(.top, 0.4)
-                                .padding(.bottom, 8)
-                            
-                        }
-                        .frame(width: 160, height: 70)
-                        .background(Color("LightGrey"))
-                        
-                    }
-                    .onAppear {
-                        withAnimation(.linear(duration: 1)) {
-                            imageScale = 1
-                        }
-                    }
-                    
                 }
                 .padding(.bottom, 20)
             }

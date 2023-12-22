@@ -30,42 +30,41 @@ struct RecipeLisView<ViewModel>: View where ViewModel: RecipeListViewModelObserv
                 isPresented.toggle()
             }
         }
-        
     }
     
     var body: some View {
-        ZStack {
-            Color.white.ignoresSafeArea(.all,edges: .all)
-            switch viewModel.state {
-            case .LOADING:
-                ProgressView()
-            case .SUCCESS(let recipes):
-                Color("DarkBlue").ignoresSafeArea(.all,edges: .all)
-                
-                VStack {
-                    // Buscador
-                    HStack(alignment: .center) {
-                        SearchRecipeTextfieldView(placeholder: "EJEMPLO", text: $searchText)
-                            .autocorrectionDisabled()
-                            .accessibility(identifier: "ProductSearchField")
+        NavigationView{
+            ZStack {
+                Color.white.ignoresSafeArea(.all,edges: .all)
+                switch viewModel.state {
+                case .LOADING:
+                    ProgressView()
+                case .SUCCESS(let recipes):
+                    VStack {
+                        // Buscador
+                        HStack(alignment: .center) {
+                            SearchRecipeTextfieldView(placeholder: "Buscar receta por nombre o ingrediente", text: $searchText)
+                                .autocorrectionDisabled()
+                                .accessibility(identifier: "RecipeSearchField")
+                        }
+                        
+                        Spacer()
+                        
+                        // Lista
+                        List {
+                          ForEach(recipes.filter({ searchText.isEmpty ? true : $0.name.lowercased().contains(searchText.lowercased()) }), id: \.id) { recipe in
+                              
+                              NavigationLink(destination: RecipeDetailNavigationView(recipe: recipe)) {
+                                  RecipeView(recipe: recipe)
+                              }
+                          }
+                        }
                     }
                     
-                    Spacer()
-                    
-                    // Lista
-                    List {
-                      ForEach(recipes.filter({ searchText.isEmpty ? true : $0.name.lowercased().contains(searchText.lowercased()) }), id: \.id) { recipe in
-                          
-                          RecipeView(recipe: recipe)
-                        /*NavigationLink(destination: RecipeDetailView(recipe: Recipe)) {
-                            RecipeView(recipe: recipe)
-                        }*/
-                      }
-                    }
+                case .FAILURE(let error):
+                    Text("My error: \(error)")
+                        .padding(.horizontal)
                 }
-            case .FAILURE(let error):
-                Text("My error: \(error)")
-                    .padding(.horizontal)
             }
         }
     }
@@ -78,6 +77,7 @@ struct RecipeLisView_Previews: PreviewProvider {
     }
 }
 #endif
+
 
 struct SearchRecipeTextfieldView: View {
     
@@ -111,15 +111,41 @@ struct RecipeView: View {
                 Text(recipe.name)
                     .font(.largeTitle)
                     .fontWeight(.heavy)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color.black)
                     .multilineTextAlignment(.leading)
                     .padding()
             }
         }
-        .frame(height: 280)
+        .frame(height: 200)
         .clipShape(RoundedRectangle(cornerRadius: 20, style: .circular))
-        .onTapGesture {
-            
-        }
+    }
+}
+
+struct RecipeDetailNavigationView: View {
+    var recipe: Recipe
+    
+    var body: some View {
+        NavigationLink(
+            destination: RecipeDetailView(viewModel: DependencyInjectionContainer.shared.resolve(RecipeDetailViewModel.self, argument: recipe.id)!),
+            label: {
+                ZStack() {
+                    URLImageView(imageUrl: recipe.urlImage)
+                        .scaledToFill()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .clipped()
+                    
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text(recipe.name)
+                            .font(.largeTitle)
+                            .fontWeight(.heavy)
+                            .foregroundColor(Color.black)
+                            .multilineTextAlignment(.leading)
+                            .padding()
+                    }
+                }
+                .frame(height: 200)
+                .clipShape(RoundedRectangle(cornerRadius: 20, style: .circular))
+            }
+        )
     }
 }
