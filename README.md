@@ -1,4 +1,4 @@
-# Recetas
+![ios_gif_app](https://github.com/0MoNa15/recetasIOS/assets/21272764/aa7e3ff6-824d-41bb-990f-8b8d4cbc3afe)# Recetas
 
 Esta aplicación te permite descubrir recetas auténticas de Perú y Colombia, con información detallada sobre su lugar de origen para sumergirte en la cultura culinaria de estos dos países.
 
@@ -26,4 +26,9 @@ Esta aplicación te permite descubrir recetas auténticas de Perú y Colombia, c
 ## Servidores
 - **Servidor de Imágenes:** [ImgBB](https://mona15.imgbb.com/)
 - **Servidor de Endpoints:** [Mockable](https://www.mockable.io/)
+
+## Demo
+Este es el comportamiento de la aplicación:
+
+![Uploading ios_gif_app.gif…]()
 
