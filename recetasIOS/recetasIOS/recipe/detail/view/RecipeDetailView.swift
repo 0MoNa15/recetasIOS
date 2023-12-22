@@ -51,7 +51,7 @@ struct RecipeDetailView<ViewModel>: View where ViewModel: RecipeDetailViewModel 
                     }
                 
                 MapButton(
-                  title: "Ver el mapa",
+                  title: "Ver origen de la receta",
                   backgroundColor: .blue.opacity(0.2),
                   foregroundColor: .blue,
                   action: {
@@ -59,7 +59,10 @@ struct RecipeDetailView<ViewModel>: View where ViewModel: RecipeDetailViewModel 
                   })
                 .sheet(isPresented: $showMap, content: {
                   NavigationView {
-                    MapView(latitude: 34.4554, longitude: 70.171168)
+                    MapView(
+                        latitude: recipeDetail?.location.latitude ?? 34.4554,
+                        longitude: recipeDetail?.location.longitude ?? 70.171168,
+                        city: recipeDetail?.location.city ?? "Lima")
                       .edgesIgnoringSafeArea(.all)
                   }
                 })

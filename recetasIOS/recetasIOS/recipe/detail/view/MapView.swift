@@ -22,6 +22,7 @@ class LocationMap: NSObject, MKAnnotation {
 struct MapView: UIViewRepresentable {
   let latitude: Double
   let longitude: Double
+  let city: String
   
   func makeUIView(context: Context) -> MKMapView {
     let mapView = MKMapView()
@@ -32,7 +33,7 @@ struct MapView: UIViewRepresentable {
     let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     uiView.setCenter(coordinate, animated: true)
     
-    let location = LocationMap(title: "EJEMPLOOOO", coordinate: coordinate)
+    let location = LocationMap(title: city, coordinate: coordinate)
     uiView.addAnnotation(location)
   }
 }
