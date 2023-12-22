@@ -10,7 +10,8 @@ import Foundation
 
 struct RecipeLisView<ViewModel>: View where ViewModel: RecipeListViewModelObservable {
     @ObservedObject private var viewModel: ViewModel
-    
+    @State private var searchText: String = ""
+
     @SwiftUI.State var currentIndex: Int = 0
     @SwiftUI.State var id: Int = 0
     @SwiftUI.State var isPresented: Bool = false
@@ -40,15 +41,28 @@ struct RecipeLisView<ViewModel>: View where ViewModel: RecipeListViewModelObserv
                 ProgressView()
             case .SUCCESS(let recipes):
                 Color("DarkBlue").ignoresSafeArea(.all,edges: .all)
-                showCardRecipeView(recipes: recipes)
-                    .fullScreenCover(isPresented: $isPresented) {
-                        RecipeDetailView(viewModel: DependencyInjectionContainer.shared.resolve(
-                            RecipeDetailViewModel.self,
-                            argument: "COL001")!
-                            //argument: viewModel.idRecipe)!
-                        )
+                
+                VStack {
+                    // Buscador
+                    HStack(alignment: .center) {
+                        SearchRecipeTextfieldView(placeholder: "EJEMPLO", text: $searchText)
+                            .autocorrectionDisabled()
+                            .accessibility(identifier: "ProductSearchField")
                     }
-                    .padding(.top, 60)
+                    
+                    Spacer()
+                    
+                    // Lista
+                    List {
+                      ForEach(recipes.filter({ searchText.isEmpty ? true : $0.name.lowercased().contains(searchText.lowercased()) }), id: \.id) { recipe in
+                          
+                          RecipeView(recipe: recipe)
+                        /*NavigationLink(destination: RecipeDetailView(recipe: Recipe)) {
+                            RecipeView(recipe: recipe)
+                        }*/
+                      }
+                    }
+                }
             case .FAILURE(let error):
                 Text("My error: \(error)")
                     .padding(.horizontal)
@@ -64,3 +78,48 @@ struct RecipeLisView_Previews: PreviewProvider {
     }
 }
 #endif
+
+struct SearchRecipeTextfieldView: View {
+    
+  var placeholder: String
+  @Binding var text: String
+    
+  var body: some View {
+    TextField(placeholder, text: $text)
+      .padding(7)
+      .background(Color(.systemGray6))
+      .cornerRadius(30)
+      .padding(.horizontal, 10)
+      .shadow(color: .gray, radius: 1, x: 0, y: 1)
+  }
+}
+
+struct RecipeView: View {
+    
+    var recipe: Recipe
+    @State private var imageScale: CGFloat = 0.25
+    
+    var body: some View {
+        
+        ZStack() {
+            URLImageView(imageUrl: recipe.urlImage)
+                .scaledToFill()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .clipped()
+            
+            VStack(alignment: .leading, spacing: 10) {
+                Text(recipe.name)
+                    .font(.largeTitle)
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.leading)
+                    .padding()
+            }
+        }
+        .frame(height: 280)
+        .clipShape(RoundedRectangle(cornerRadius: 20, style: .circular))
+        .onTapGesture {
+            
+        }
+    }
+}
