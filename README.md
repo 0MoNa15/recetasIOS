@@ -21,9 +21,9 @@ Esta aplicación te permite descubrir recetas auténticas de Perú y Colombia, c
   - Combine: Para el manejo de hilos y ejecución asíncrona.
   - MapKit: Integración de mapas para mostrar la ubicación de las recetas.
   - Swinject: Para la inyección de dependencias.
+  - CocoaPods: Para el manejo de dependencias
 
 ## Servidores
-
 - **Servidor de Imágenes:** [ImgBB](https://mona15.imgbb.com/)
 - **Servidor de Endpoints:** [Mockable](https://www.mockable.io/)
 
