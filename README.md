@@ -30,6 +30,5 @@ Esta aplicación te permite descubrir recetas auténticas de Perú y Colombia, c
 ## Demo
 Este es el comportamiento de la aplicación:
 
-![Uploading ios_gif_app.gif…]()
 ![ios_gif_app](https://github.com/0MoNa15/recetasIOS/assets/21272764/aa7e3ff6-824d-41bb-990f-8b8d4cbc3afe)
 
