@@ -356,7 +356,6 @@
 				304984882B346CEB00188A9A /* infraestructure */,
 				304984AB2B346CF500188A9A /* domain */,
 				304984562B346CCD00188A9A /* Products */,
-				CA5FCF139042D07CC2510477 /* Pods */,
 				6673705C3834B02475915E01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -729,6 +728,7 @@
 		6673705C3834B02475915E01 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CA5FCF139042D07CC2510477 /* Pods */,
 				83393F027E276D39B204814D /* Pods_domain.framework */,
 				9A44380EC6805C03B6710BA0 /* Pods_domain_domainTests.framework */,
 				9B9BAF640741819551320DDF /* Pods_infraestructure.framework */,
