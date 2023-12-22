@@ -11,9 +11,8 @@ struct RecipeDetailView<ViewModel>: View where ViewModel: RecipeDetailViewModel 
     
     @ObservedObject private var viewModel: ViewModel
     @State private var imageScale: CGFloat = 0.25
-    
-    @Environment(\.dismiss) var dismiss
-    
+    @State private var showMap: Bool = false
+        
     init(viewModel: ViewModel) {
         self.viewModel = viewModel
     }
@@ -21,36 +20,53 @@ struct RecipeDetailView<ViewModel>: View where ViewModel: RecipeDetailViewModel 
     func descriptionView(recipeDetail: RecipeDetail?) -> some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
-                VStack(spacing: 10) {
-                    URLImageView(imageUrl: recipeDetail?.image ?? "")
-                        .aspectRatio(contentMode: .fit)
-                        .frame(height: 450)
-                        .cornerRadius(5)
-                        .padding(.bottom)
-                        .scaleEffect(imageScale)
+                ZStack() {
                     
-                    VStack {
-                        Text(recipeDetail?.name ?? "")
+                    HStack() {
+                        URLImageView(imageUrl: recipeDetail?.image ?? "https://i.ibb.co/rk7Zm7b/changua.jpg")
+                            .scaledToFill()
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .clipped()
+                    }
+                    .frame(height: 200)
+                    .clipShape(RoundedRectangle(cornerRadius: 20, style: .circular))
+                }
+                .frame(height: 200)
+                .clipShape(RoundedRectangle(cornerRadius: 20, style: .circular))
+                    
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text(recipeDetail?.name ?? "Nombre receta")
                             .font(.largeTitle)
                             .fontWeight(.heavy)
-                            .foregroundColor(Color.blue)
-                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.black)
+                            .multilineTextAlignment(.leading)
+                            .padding()
+                        
+                        Text(recipeDetail?.description ?? "Descripcion")
+                            .font(.subheadline)
+                            .fontWeight(.heavy)
+                            .foregroundColor(Color.gray)
+                            .multilineTextAlignment(.leading)
                             .padding()
                     }
-                }
-                .padding(.bottom, 20)
+                
+                MapButton(
+                  title: "Ver el mapa",
+                  backgroundColor: .blue.opacity(0.2),
+                  foregroundColor: .blue,
+                  action: {
+                    showMap = true
+                  })
+                .sheet(isPresented: $showMap, content: {
+                  NavigationView {
+                    MapView(latitude: 34.4554, longitude: 70.171168)
+                      .edgesIgnoringSafeArea(.all)
+                  }
+                })
             }
             .frame(maxWidth: .infinity)
             .background(Color("DarkBlue").ignoresSafeArea(.all,edges: .all))
             .toolbarBackground(.hidden, for: .navigationBar)
-            .toolbar {
-                Button {
-                    dismiss()
-                } label: {
-                    Text("Done")
-                }
-
-            }
         }
         
     }
@@ -70,4 +86,27 @@ struct RecipeDetailView<ViewModel>: View where ViewModel: RecipeDetailViewModel 
             viewModel.getRecipeDetail()
         }
     }
+}
+
+
+struct MapButton: View {
+  var title: String
+  var backgroundColor: Color
+  var foregroundColor: Color
+  var action: (() -> Void)? = nil
+  
+  var body: some View {
+    Button(action: {
+      action?()
+    }) {
+      Text(title)
+        .font(.system(size: 16))
+        .fontWeight(.regular)
+        .foregroundColor(foregroundColor)
+        .padding(.vertical, 10)
+        .frame(maxWidth: .infinity)
+        .background(backgroundColor)
+        .cornerRadius(7)
+    }
+  }
 }

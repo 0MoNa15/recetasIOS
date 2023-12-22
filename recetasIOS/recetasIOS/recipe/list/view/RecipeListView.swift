@@ -135,7 +135,7 @@ struct RecipeDetailNavigationView: View {
                         .clipped()
                     
                     VStack(alignment: .leading, spacing: 10) {
-                        Text(recipe.name)
+                        Text("Click para ver el detalle")
                             .font(.largeTitle)
                             .fontWeight(.heavy)
                             .foregroundColor(Color.black)
@@ -149,3 +149,5 @@ struct RecipeDetailNavigationView: View {
         )
     }
 }
+
+

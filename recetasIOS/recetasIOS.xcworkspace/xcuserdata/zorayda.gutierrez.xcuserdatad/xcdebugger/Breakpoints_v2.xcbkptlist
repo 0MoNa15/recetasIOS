@@ -1214,7 +1214,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E5428AB7-5691-46B8-9B35-28D6B5B9689F"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "infraestructure/recipe/repository/RecipeAlamofireRepository.swift"
@@ -1262,48 +1262,16 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "790ED8FE-8844-4525-A071-769A4B1DF081"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "recetasIOS/recipe/detail/view/RecipeDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "descriptionView(recipeDetail:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "790ED8FE-8844-4525-A071-769A4B1DF081 - eea344e8a7b371d1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "recetasIOS.RecipeDetailView.descriptionView(recipeDetail: Swift.Optional&lt;recetasIOS.RecipeDetail&gt;) -&gt; some"
-                  moduleName = "recetasIOS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/recetasIOS/recipe/detail/view/RecipeDetailView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "364">
-               </Location>
-               <Location
-                  uuid = "790ED8FE-8844-4525-A071-769A4B1DF081 - 4e9e0a6ad870cc98"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in recetasIOS.RecipeDetailView.descriptionView(recipeDetail: Swift.Optional&lt;recetasIOS.RecipeDetail&gt;) -&gt; some"
-                  moduleName = "recetasIOS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zorayda.gutierrez/Documents/Projects/recetasIOS/recetasIOS/recetasIOS/recipe/detail/view/RecipeDetailView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "836">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1316,8 +1284,8 @@
             filePath = "recetasIOS/recipe/detail/view/RecipeDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "init(viewModel:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1332,8 +1300,8 @@
             filePath = "recetasIOS/recipe/detail/view/RecipeDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -1395,8 +1363,8 @@
             filePath = "recetasIOS/recipe/detail/view/RecipeDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -1443,8 +1411,8 @@
             filePath = "recetasIOS/recipe/detail/view/RecipeDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -1491,8 +1459,8 @@
             filePath = "recetasIOS/recipe/detail/view/RecipeDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -1539,8 +1507,8 @@
             filePath = "recetasIOS/recipe/detail/view/RecipeDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
