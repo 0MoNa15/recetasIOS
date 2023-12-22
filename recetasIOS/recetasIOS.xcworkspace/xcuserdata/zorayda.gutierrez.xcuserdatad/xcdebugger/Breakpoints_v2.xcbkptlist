@@ -1302,8 +1302,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "78"
             endingLineNumber = "78"
-            landmarkName = "body"
-            landmarkType = "24">
+            landmarkName = "descriptionView(recipeDetail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "A469376F-F67C-4D35-9C9F-C3CD7A3C5E89 - 8e66b996dea21d94"
@@ -1365,8 +1365,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "81"
             endingLineNumber = "81"
-            landmarkName = "body"
-            landmarkType = "24">
+            landmarkName = "descriptionView(recipeDetail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "1C733E5C-9BCD-44D0-B06A-F711C1D13F97 - 8e66b996dea21d69"
@@ -1413,8 +1413,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "83"
             endingLineNumber = "83"
-            landmarkName = "body"
-            landmarkType = "24">
+            landmarkName = "descriptionView(recipeDetail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "F654BE86-CEA0-4FBC-9C4C-95C9E6EA869D - 8e66b996dea21d2f"
@@ -1461,8 +1461,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "86"
             endingLineNumber = "86"
-            landmarkName = "body"
-            landmarkType = "24">
+            landmarkName = "descriptionView(recipeDetail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "AA9A6BA1-080E-4FE0-902E-CC7422CE807F - 8e66b996dea21c8c"
@@ -1509,8 +1509,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "89"
             endingLineNumber = "89"
-            landmarkName = "body"
-            landmarkType = "24">
+            landmarkName = "descriptionView(recipeDetail:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "F26245D8-252D-4637-9B33-AD1254C216BE - aaeaa8f9441fef3f"

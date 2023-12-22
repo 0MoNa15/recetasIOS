@@ -52,12 +52,17 @@ struct RecipeLisView<ViewModel>: View where ViewModel: RecipeListViewModelObserv
                         
                         // Lista
                         List {
-                          ForEach(recipes.filter({ searchText.isEmpty ? true : $0.name.lowercased().contains(searchText.lowercased()) }), id: \.id) { recipe in
-                              
-                              NavigationLink(destination: RecipeDetailNavigationView(recipe: recipe)) {
-                                  RecipeView(recipe: recipe)
-                              }
-                          }
+                            ForEach(recipes.filter { recipe in
+                                let nameContains = searchText.isEmpty || recipe.name.lowercased().contains(searchText.lowercased())
+                                let ingredientsContains = recipe.ingredients.contains { ingredient in
+                                    ingredient.lowercased().contains(searchText.lowercased())
+                                }
+                                return nameContains || ingredientsContains
+                            }, id: \.id) { recipe in
+                                NavigationLink(destination: RecipeDetailNavigationView(recipe: recipe)) {
+                                    RecipeView(recipe: recipe)
+                                }
+                            }
                         }
                     }
                     

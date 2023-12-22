@@ -12,11 +12,11 @@ struct RecipeDetailView<ViewModel>: View where ViewModel: RecipeDetailViewModel 
     @ObservedObject private var viewModel: ViewModel
     @State private var imageScale: CGFloat = 0.25
     @State private var showMap: Bool = false
-        
+    
     init(viewModel: ViewModel) {
         self.viewModel = viewModel
     }
-        
+    
     func descriptionView(recipeDetail: RecipeDetail?) -> some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
@@ -33,39 +33,54 @@ struct RecipeDetailView<ViewModel>: View where ViewModel: RecipeDetailViewModel 
                 }
                 .frame(height: 200)
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .circular))
+                
+                VStack(alignment: .leading, spacing: 10) {
+                    Text(recipeDetail?.name ?? "Nombre receta")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color.black)
+                        .multilineTextAlignment(.leading)
+                        .padding()
                     
-                    VStack(alignment: .leading, spacing: 10) {
-                        Text(recipeDetail?.name ?? "Nombre receta")
-                            .font(.largeTitle)
-                            .fontWeight(.heavy)
-                            .foregroundColor(Color.black)
-                            .multilineTextAlignment(.leading)
-                            .padding()
-                        
-                        Text(recipeDetail?.description ?? "Descripcion")
-                            .font(.subheadline)
-                            .fontWeight(.heavy)
-                            .foregroundColor(Color.gray)
-                            .multilineTextAlignment(.leading)
-                            .padding()
-                    }
+                    Text(recipeDetail?.description ?? "Descripcion")
+                        .font(.subheadline)
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color.gray)
+                        .multilineTextAlignment(.leading)
+                        .padding()
+                }
                 
                 MapButton(
-                  title: "Ver origen de la receta",
-                  backgroundColor: .blue.opacity(0.2),
-                  foregroundColor: .blue,
-                  action: {
-                    showMap = true
-                  })
+                    title: "Ver origen de la receta",
+                    backgroundColor: .blue.opacity(0.2),
+                    foregroundColor: .blue,
+                    action: {
+                        showMap = true
+                    })
                 .sheet(isPresented: $showMap, content: {
-                  NavigationView {
-                    MapView(
-                        latitude: recipeDetail?.location.latitude ?? 34.4554,
-                        longitude: recipeDetail?.location.longitude ?? 70.171168,
-                        city: recipeDetail?.location.city ?? "Lima")
-                      .edgesIgnoringSafeArea(.all)
-                  }
+                    NavigationView {
+                        ZStack {
+                            MapView(
+                                latitude: recipeDetail?.location.latitude ?? 34.4554,
+                                longitude: recipeDetail?.location.longitude ?? 70.171168,
+                                city: recipeDetail?.location.city ?? "Lima")
+                            .edgesIgnoringSafeArea(.all)
+                            VStack {
+                                Spacer()
+                                Button("Regresar", action: {
+                                    showMap = false
+                                })
+                                .frame(maxWidth: .infinity, minHeight: 40)
+                                .background(Color.blue)
+                                .foregroundColor(Color.white)
+                                .font(.system(.title3, weight: .semibold))
+                                .cornerRadius(11)
+                            }
+                            .padding(18)
+                        }
+                    }
                 })
+                
             }
             .frame(maxWidth: .infinity)
             .background(Color("DarkBlue").ignoresSafeArea(.all,edges: .all))
@@ -93,23 +108,23 @@ struct RecipeDetailView<ViewModel>: View where ViewModel: RecipeDetailViewModel 
 
 
 struct MapButton: View {
-  var title: String
-  var backgroundColor: Color
-  var foregroundColor: Color
-  var action: (() -> Void)? = nil
-  
-  var body: some View {
-    Button(action: {
-      action?()
-    }) {
-      Text(title)
-        .font(.system(size: 16))
-        .fontWeight(.regular)
-        .foregroundColor(foregroundColor)
-        .padding(.vertical, 10)
-        .frame(maxWidth: .infinity)
-        .background(backgroundColor)
-        .cornerRadius(7)
+    var title: String
+    var backgroundColor: Color
+    var foregroundColor: Color
+    var action: (() -> Void)? = nil
+    
+    var body: some View {
+        Button(action: {
+            action?()
+        }) {
+            Text(title)
+                .font(.system(size: 16))
+                .fontWeight(.regular)
+                .foregroundColor(foregroundColor)
+                .padding(.vertical, 10)
+                .frame(maxWidth: .infinity)
+                .background(backgroundColor)
+                .cornerRadius(7)
+        }
     }
-  }
 }
